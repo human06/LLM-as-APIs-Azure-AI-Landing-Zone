@@ -2,7 +2,7 @@
 
 on: [push]
 
-name: AzureCLISample
+name: AzMarketplaceAcceptMistralAgreement
 
 jobs:
 
@@ -13,12 +13,15 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{secrets.AZURE_CREDENTIALS }}
 
     - name: Azure CLI script
       uses: azure/cli@v2
       with:
         azcliversion: latest
         inlineScript: |
-          az account show
-          az storage -h
+          az term accept --product "mistral-ai-large-offer" --plan "mistral-large-2402-plan" --publisher "000-000"
+
+
+
+

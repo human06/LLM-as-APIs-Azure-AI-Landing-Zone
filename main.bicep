@@ -225,3 +225,4 @@ resource MistralserverlessEndpoint 'Microsoft.MachineLearningServices/workspaces
        }
   }
 
+  az vm image terms accept --urn Mistral:mistral-ai-large-offer:mistral-large-2402-plan:latest
