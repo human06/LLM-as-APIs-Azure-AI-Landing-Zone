@@ -211,6 +211,9 @@ resource MistralserverlessEndpoint 'Microsoft.MachineLearningServices/workspaces
   name: 'mistrallarge${environmentName}'
   kind: 'Mistral'
   location: location
+  dependsOn: [
+    marketplace
+  ]
   parent: azureaiProjectResource
   sku: {
     name: 'Consumption'
@@ -224,5 +227,3 @@ resource MistralserverlessEndpoint 'Microsoft.MachineLearningServices/workspaces
    offer: null
        }
   }
-
-  az vm image terms accept --urn Mistral:mistral-ai-large-offer:mistral-large-2402-plan:latest
