@@ -1,0 +1,9 @@
+[
+    {
+        "name": "gpt35",
+        "displayName": "GPT-3.5",
+        "method": "POST",
+        "urlTemplate": "/deployments/gpt-35-turbo/chat/completions?api-version=2024-02-15-preview",
+        "description": "Request to get completion from Azure OpenAI using GPT-3.5"     
+    }
+]
