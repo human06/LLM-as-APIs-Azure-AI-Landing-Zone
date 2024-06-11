@@ -1,0 +1,15 @@
+[
+    {
+        "location": "francecentral",
+        "name": "francecentral",
+        "models": [
+            {
+                "name": "gpt-35-turbo",
+                "version": "0301",
+                "raiPolicyName": "",
+                "capacity": null,
+                "scaleType": "Standard"
+            }
+        ]
+    }
+]
