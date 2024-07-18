@@ -32,4 +32,4 @@
         <set-variable name="retryCount" value="@(context.Variables.GetValueOrDefault<int>("retryCount", 0) + 1)" />
         <base />
     </on-error>
-</policies>
+</policies> 
